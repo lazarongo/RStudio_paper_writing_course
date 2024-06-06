@@ -92,6 +92,7 @@ head(data_Ashwini)
 
 # Select only relevant columns and clean up names -------------
 
+
 data_Ashwini_sel <- data_Ashwini %>%
   select(1:6) %>%
   janitor::clean_names()
@@ -256,7 +257,7 @@ theme_plots <- theme_minimal() +
     legend.title = element_text(size = 12),
     legend.key.size = unit(7, "mm"),
     legend.title.position = "top",
-    legend.background = element_rect(color = "grey"),
+    legend.background = element_rect(color = "white"),
     plot.title.position = "panel"
   )
 
